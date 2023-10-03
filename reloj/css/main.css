@@ -1,0 +1,154 @@
+body {
+  background-color: black;
+  width: 10%;
+  overflow: hidden;
+}
+
+/*Backgrounds*/
+.fondohora {
+  height: 40%;
+  color: white;
+  width: 1000%;
+}
+.madrugada {
+  background-image: url("https://ichef.bbci.co.uk/news/ws/660/amz/worldservice/live/assets/images/2015/10/01/151001122719_amanecer_624x351_getty_nocredit.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: top;
+}
+.dia {
+  background-image: url("https://ik.imagekit.io/maorodriguez/grupodomus/wp-content/uploads/2020/08/Bucaramanga-sitio-ideal-para-vivir-en-Colombia-Grupo-Domus-6-min-1900x1268.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: top;
+}
+
+.tarde {
+  background-image: url("https://www.vanguardia.com/binrepository/979x478/120c0/716d477/none/12204/DVON/atardecer-bucaramanga_3023129_20190613180905.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: top;
+}
+
+.noche {
+  background-image: url("https://www.santandercompetitivo.org/imagenes/vco_noticias/noti_55e200a8f5151503f272c14363f4c26481c1728e.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: top;
+  height: 580px;
+}
+.lluvia {
+  background-image: url("https://www.elsoldetampico.com.mx/incoming/9u7p2x-seguiran-las-fuertes-lluvias-y-descargas-electricas-en-tamaulipas/ALTERNATES/LANDSCAPE_1140/Seguir%C3%A1n%20las%20fuertes%20lluvias%20y%20descargas%20el%C3%A9ctricas%20en%20Tamaulipas");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: top;
+}
+
+.nublado {
+  background-image: url("https://images.ecestaticos.com/6ibiBzkGgUSVN5oJAyp0vAt5pvM=/4x110:2119x1302/1200x1200/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F566%2F166%2Fe24%2F566166e242c19971965461dca9509292.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: top;
+}
+.container-fluid {
+  padding-left: 0; 
+  padding-right: 0;
+}
+
+
+
+/*Reloj y parte principal*/
+.gradient {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.37);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.37) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.37)), color-stop(100%, rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.37) 0%, rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0.37) 0%, rgba(0,0,0,1) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.37) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.37) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 )
+}
+.reloj {
+	font-size: 50px;/*tamaño de la letra*/
+
+	height: 50px;
+  width: 300px;
+  margin: 20px auto 50px;
+} 
+
+#hora, #min {
+	display: inline-block;
+}
+
+#fecha {
+  font-size: 18px;
+}
+
+h5 {
+  margin-bottom: 180px;
+}
+
+
+
+
+
+/*Boton*/
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+  margin-top: -180px;
+}
+
+
+/* Ciudades */
+#ciudades {
+  border-radius: 10px;
+  width: 250px;
+  height: 380px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 130px;
+  left:0;
+  right:0;
+}
+#ciudades .city {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#ciudades .city .relojcity {
+  margin-right: 40px;
+  display: inline-block;
+}
+#ciudades .city .relojcity p {
+  display: inline-block;
+}

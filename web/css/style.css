@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;/*tipo de letra*/
+}
+header{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;/*dar formato*/
+}
+
+header h1{
+    margin: 0;
+}
+main{/*ancho de 80% y margen auto de cada lado*/
+   width: 80%;
+   margin: auto; 
+
+}
+#dropzone{
+    padding: 5px 40px;/*espacio de 5 px arriba y abajo y los lados 40px*/
+    background: #ce0a0a;
+}
+#dropzone label{/*boton*/
+border-bottom: 1px solid blue ; /*linkeable para hacer clic dentro del label*/
+color: rgb(255, 255, 255);
+cursor:pointer;/*salga la manito en el link*/
+
+}
+#dropzone p{/*parrafo*/
+    padding: 10px;
+    background: white;
+    text-align: center;
+    border: 2px;
+    color: #333;
+}
+#dropzone input{
+    display: none;/*no quiero  que se vea el input*/
+}

@@ -1,0 +1,204 @@
+/*custom proprerties*/
+
+:root {
+    --fuenteHeading: "Open Sans", sans-serift;
+    --fuenteParrafos: "Open Sans", san-serift;
+    --primario: #784D3C;
+    --azul: #396ac5;
+    --negro: #000;
+    --gris: #434345;
+}
+
+
+/*en todos los proyectos*/
+
+html {
+    box-sizing: border-box;
+    /*el borde de nuestra pagina no afecte los elementos*/
+    font-size: 62.5%;
+    /*1rem = 10px*/
+    background-color: var(--negro);
+}
+
+
+/*nos permite dos elmentos extra que son hijos del elemento que lo apliquemos */
+
+
+/*insertar nuevos elementos */
+
+*,
+* :before,
+*:after {
+    box-sizing: inherit;
+    /*hereda del elmeneto padre de border box*/
+}
+
+body {
+    line-height: 0;
+    /*separacion del lineado de escritura*/
+    background-color: var(--negro);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    /* Estilos para adaptar el contenido */
+    body {
+      font-size: 14px; /* Tamaño de fuente para pantallas pequeñas */
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para adaptar el contenido */
+    body {
+      font-size: 16px; /* Tamaño de fuente para pantallas medianas */
+    }
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media (min-width: 992px) {
+    /* Estilos para adaptar el contenido */
+    body {
+      font-size: 18px; /* Tamaño de fuente para pantallas grandes */
+    }
+  }
+  
+
+.iframe {
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+}
+
+
+/**GLOBALES**/
+
+.contenedor {
+    width: 100px;
+    margin: 0 0;
+    /*centrar el contenido horizontalmente en la pantalla */
+}
+
+img {
+    max-width: 100%;
+    /*100% de su anchura*/
+}
+
+
+/**utiliddes**/
+
+.no-margin {
+    /*sin margen*/
+    margin: 0;
+}
+
+.no-padding {
+    /*sin relleno*/
+    padding: 0;
+}
+
+
+/** fin de en todos los proyectos**/
+
+.paspartu {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.iframe {
+    height: 100%;
+    width: 70%;
+    overflow: hidden;
+}
+
+.contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /*de 3 partesla primera parte toma dos terceras partes y la otra parte la parte faltante*/
+    column-gap: auto;
+    /*el espacio que hay de una columna a otra */
+}
+
+.entrada {
+    /*borde y margen de las imagenes*/
+    border-bottom: 0px solid var(--gris);
+    /*borde en la direccion hacia abajo*/
+    margin-bottom: 0rem;
+    background-size: cover;
+}
+
+.entrada:last-of-type {
+    /*toma la ultima imagen solamente, para timar el ultimo elemento en este caso el margin y el borde*/
+    border-bottom: none;
+    /*borde en la direccion hacia abajo*/
+    margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+    .boton {
+        display: inline-block;
+        /*es necesario el display inline block para poder darle margen hacia abajo al boton, de lo contrario, no lo toma*/
+        margin-bottom: 10px;
+        /*espacio que hay del botn hacia abajo*/
+    }
+}
+
+.sidebar {
+    max-width: auto;
+    width: auto;
+    column-gap: auto;
+}
+
+.time-widget-container {
+   
+    grid-gap: 10px;
+    /* Ajusta este valor para establecer el espacio entre los elementos */
+    text-align: center;
+    height: 500px;
+    background-color: #16c0b200;
+    border-radius: 0%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.time-widget-container .item {
+    background-color: red;
+    height: 500px;
+    /* Ajusta esta altura según tus necesidades */
+    width: 100px;
+}
+
+.time-widget-container .item2 {
+    background-color: blue;
+    /* Ajusta esta altura según tus necesidades */
+}
+
+.time-widget-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #ff0000;
+}
+
+.time-widget-container a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: all 0.3s ease-in-out;
+}
+
+.time-widget-container a:hover {
+    text-decoration: underline;
+    text-align: 50%;
+}
+
+.time-widget-container iframe {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+}
